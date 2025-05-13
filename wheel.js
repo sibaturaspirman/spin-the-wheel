@@ -2,11 +2,15 @@ const canvas = document.getElementById("wheelCanvas");
 const ctx = canvas.getContext("2d");
 
 function resizeCanvas() {
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
+  const canvas = document.getElementById("wheelCanvas");
+  canvas.width = canvas.clientWidth;
+  canvas.height = canvas.clientHeight;
 }
+
 resizeCanvas();
+window.addEventListener("DOMContentLoaded", resizeCanvas);
 window.addEventListener("resize", resizeCanvas);
+
 
 const centerX = () => canvas.width / 2;
 const centerY = () => canvas.height / 2;

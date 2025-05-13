@@ -4,6 +4,7 @@ const FILES_TO_CACHE = [
   "/index.html",
   "/wheel.js",
   "/manifest.json",
+  "/assets/BG2.JPEG",
   "/assets/bulet.png",
   "/assets/WHEEL-BG.png",
   "/assets/BTN-START.png",
